@@ -6,16 +6,25 @@
 //
 
 import SwiftUI
+import MusicKit
 
 struct ContentView: View {
+    
+    @State private var searchTerm = ""
+    @State private var showingSheet = true
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+        NavigationView {
+            List {
+                Text("Hello World")
+                Text("Hello World")
+                Text("Hello World")
+            }
+            .navigationTitle("Yinyl")
+        }
+        .searchable(text: self.$searchTerm, prompt: "Search music")
+        .sheet(isPresented: self.$showingSheet) {
+            Onboarding()
+        }
     }
 }

@@ -11,6 +11,7 @@
 		E381D7CF28401DFC009EBDE7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E381D7CE28401DFC009EBDE7 /* ContentView.swift */; };
 		E381D7D128401DFF009EBDE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E381D7D028401DFF009EBDE7 /* Assets.xcassets */; };
 		E381D7D428401DFF009EBDE7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E381D7D328401DFF009EBDE7 /* Preview Assets.xcassets */; };
+		E381D7DC28402A63009EBDE7 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = E381D7DB28402A62009EBDE7 /* Onboarding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,8 @@
 		E381D7CE28401DFC009EBDE7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E381D7D028401DFF009EBDE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E381D7D328401DFF009EBDE7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E381D7DA28402612009EBDE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E381D7DB28402A62009EBDE7 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +55,10 @@
 			isa = PBXGroup;
 			children = (
 				E381D7CC28401DFC009EBDE7 /* VinylApp.swift */,
+				E381D7DB28402A62009EBDE7 /* Onboarding.swift */,
 				E381D7CE28401DFC009EBDE7 /* ContentView.swift */,
 				E381D7D028401DFF009EBDE7 /* Assets.xcassets */,
+				E381D7DA28402612009EBDE7 /* Info.plist */,
 				E381D7D228401DFF009EBDE7 /* Preview Content */,
 			);
 			path = Vinyl;
@@ -137,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E381D7DC28402A63009EBDE7 /* Onboarding.swift in Sources */,
 				E381D7CF28401DFC009EBDE7 /* ContentView.swift in Sources */,
 				E381D7CD28401DFC009EBDE7 /* VinylApp.swift in Sources */,
 			);
@@ -270,6 +276,7 @@
 				DEVELOPMENT_TEAM = QTL3ZJFVAP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Vinyl/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +306,7 @@
 				DEVELOPMENT_TEAM = QTL3ZJFVAP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Vinyl/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
