@@ -7,17 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E358B30D28A04FF7007383D2 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E358B30C28A04FF7007383D2 /* DataModel.swift */; };
+		E358B30F28A05499007383D2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E358B30E28A05499007383D2 /* NetworkManager.swift */; };
+		E358B31128A059E7007383D2 /* AlbumListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E358B31028A059E7007383D2 /* AlbumListViewModel.swift */; };
+		E358B31328A06214007383D2 /* ArtworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E358B31228A06214007383D2 /* ArtworkView.swift */; };
+		E358B31528A063A3007383D2 /* AlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E358B31428A063A3007383D2 /* AlbumView.swift */; };
 		E381D7CD28401DFC009EBDE7 /* VinylApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E381D7CC28401DFC009EBDE7 /* VinylApp.swift */; };
 		E381D7CF28401DFC009EBDE7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E381D7CE28401DFC009EBDE7 /* ContentView.swift */; };
 		E381D7D128401DFF009EBDE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E381D7D028401DFF009EBDE7 /* Assets.xcassets */; };
 		E381D7D428401DFF009EBDE7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E381D7D328401DFF009EBDE7 /* Preview Assets.xcassets */; };
 		E381D7DC28402A63009EBDE7 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = E381D7DB28402A62009EBDE7 /* Onboarding.swift */; };
-		E381D7E02842E1F1009EBDE7 /* AuthorizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E381D7DF2842E1F1009EBDE7 /* AuthorizationManager.swift */; };
 		E381D7E528511AA9009EBDE7 /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E381D7E428511AA9009EBDE7 /* DiscoverView.swift */; };
 		E381D7E728511ABA009EBDE7 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E381D7E628511ABA009EBDE7 /* CollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E358B30C28A04FF7007383D2 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		E358B30E28A05499007383D2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		E358B31028A059E7007383D2 /* AlbumListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListViewModel.swift; sourceTree = "<group>"; };
+		E358B31228A06214007383D2 /* ArtworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkView.swift; sourceTree = "<group>"; };
+		E358B31428A063A3007383D2 /* AlbumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumView.swift; sourceTree = "<group>"; };
 		E381D7C928401DFC009EBDE7 /* Vinyl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vinyl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E381D7CC28401DFC009EBDE7 /* VinylApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VinylApp.swift; sourceTree = "<group>"; };
 		E381D7CE28401DFC009EBDE7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -25,7 +34,6 @@
 		E381D7D328401DFF009EBDE7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E381D7DA28402612009EBDE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E381D7DB28402A62009EBDE7 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
-		E381D7DF2842E1F1009EBDE7 /* AuthorizationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationManager.swift; sourceTree = "<group>"; };
 		E381D7E428511AA9009EBDE7 /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
 		E381D7E628511ABA009EBDE7 /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -41,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E358B30B28A04FC3007383D2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E358B30C28A04FF7007383D2 /* DataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		E381D7C028401DFC009EBDE7 = {
 			isa = PBXGroup;
 			children = (
@@ -62,8 +78,10 @@
 			children = (
 				E381D7CC28401DFC009EBDE7 /* VinylApp.swift */,
 				E381D7CE28401DFC009EBDE7 /* ContentView.swift */,
+				E358B31028A059E7007383D2 /* AlbumListViewModel.swift */,
 				E381D7E22842E204009EBDE7 /* Onboarding */,
 				E381D7E3285117AA009EBDE7 /* Views */,
+				E358B30B28A04FC3007383D2 /* Models */,
 				E381D7E12842E1F7009EBDE7 /* Managers */,
 				E381D7D028401DFF009EBDE7 /* Assets.xcassets */,
 				E381D7DA28402612009EBDE7 /* Info.plist */,
@@ -83,7 +101,7 @@
 		E381D7E12842E1F7009EBDE7 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				E381D7DF2842E1F1009EBDE7 /* AuthorizationManager.swift */,
+				E358B30E28A05499007383D2 /* NetworkManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -100,6 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				E381D7E428511AA9009EBDE7 /* DiscoverView.swift */,
+				E358B31428A063A3007383D2 /* AlbumView.swift */,
+				E358B31228A06214007383D2 /* ArtworkView.swift */,
 				E381D7E628511ABA009EBDE7 /* CollectionView.swift */,
 			);
 			path = Views;
@@ -175,9 +195,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E358B31528A063A3007383D2 /* AlbumView.swift in Sources */,
+				E358B30D28A04FF7007383D2 /* DataModel.swift in Sources */,
+				E358B31328A06214007383D2 /* ArtworkView.swift in Sources */,
 				E381D7E728511ABA009EBDE7 /* CollectionView.swift in Sources */,
+				E358B31128A059E7007383D2 /* AlbumListViewModel.swift in Sources */,
 				E381D7DC28402A63009EBDE7 /* Onboarding.swift in Sources */,
-				E381D7E02842E1F1009EBDE7 /* AuthorizationManager.swift in Sources */,
+				E358B30F28A05499007383D2 /* NetworkManager.swift in Sources */,
 				E381D7E528511AA9009EBDE7 /* DiscoverView.swift in Sources */,
 				E381D7CF28401DFC009EBDE7 /* ContentView.swift in Sources */,
 				E381D7CD28401DFC009EBDE7 /* VinylApp.swift in Sources */,

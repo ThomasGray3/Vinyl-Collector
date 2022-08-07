@@ -9,23 +9,21 @@ import SwiftUI
 
 struct DiscoverView: View {
     
-    @State private var searchTerm = ""
+    @ObservedObject var viewModel: AlbumListViewModel
     
     var body: some View {
         NavigationView {
-            List {
-                Text("Hello World")
-                Text("Hello World")
-                Text("Hello World")
+            VStack {
+                if self.viewModel.albums.isEmpty {
+                    Text("Nothing to show...")
+                } else {
+                    List(self.viewModel.albums) { album in
+                        AlbumView(album: album)
+                    }
+                    .listStyle(PlainListStyle())
+                }
             }
-            .navigationTitle("Yinyl")
         }
-        .searchable(text: self.$searchTerm, prompt: "Search music")
-    }
-}
-
-struct DiscoverView_Previews: PreviewProvider {
-    static var previews: some View {
-        DiscoverView()
+        .searchable(text: self.$viewModel.searchTerm, prompt: "Search music")
     }
 }
