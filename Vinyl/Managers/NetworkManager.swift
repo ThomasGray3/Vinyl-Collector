@@ -6,10 +6,12 @@
 //
 
 import Foundation
+import SwiftUI
 
 class NetworkManager {
     
     private var dataTask: URLSessionDataTask?
+    private var dataTasks : [URLSessionDataTask] = []
     
     private func createURL(forTerm searchTerm: String) -> URL? {
         guard !searchTerm.isEmpty else {
@@ -43,5 +45,34 @@ class NetworkManager {
             }
         }
         self.dataTask?.resume()
+    }
+    
+    func networkCall(forAlbum album: Album, completion: @escaping((Image?) -> Void)) {
+        guard let imageUrl = URL(string: album.artworkUrl) else {
+            completion(nil)
+            return
+        }
+        
+        self.dataTask = URLSession.shared.dataTask(with: imageUrl) { data, _, _ in
+            guard let data = data, let artwork = UIImage(data: data) else {
+                completion(nil)
+                return
+            }
+            
+            let image = Image(uiImage: artwork)
+            completion(image)
+        }
+        
+        guard let dataTask = self.dataTask else {
+            completion(nil)
+            return
+        }
+        
+        self.dataTasks.append(dataTask)
+        self.dataTask?.resume()
+    }
+    
+    func reset() {
+        self.dataTasks.forEach { $0.cancel() }
     }
 }

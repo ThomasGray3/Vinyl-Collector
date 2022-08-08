@@ -14,7 +14,7 @@ struct AlbumView: View {
         HStack {
             ArtworkView(image: self.album.artwork)
                 .padding(.trailing)
-            VStack {
+            VStack(alignment: .leading) {
                 Text(self.album.albumName)
                 Text(self.album.artistName)
                     .font(.footnote)

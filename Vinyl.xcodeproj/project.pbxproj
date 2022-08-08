@@ -57,6 +57,32 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		E358B31628A1AA94007383D2 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				E381D7E428511AA9009EBDE7 /* DiscoverView.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		E358B31728A1AAAE007383D2 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				E381D7E628511ABA009EBDE7 /* CollectionView.swift */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		E358B31828A1AAC2007383D2 /* Album Search Result */ = {
+			isa = PBXGroup;
+			children = (
+				E358B31028A059E7007383D2 /* AlbumListViewModel.swift */,
+				E358B31428A063A3007383D2 /* AlbumView.swift */,
+				E358B31228A06214007383D2 /* ArtworkView.swift */,
+			);
+			path = "Album Search Result";
+			sourceTree = "<group>";
+		};
 		E381D7C028401DFC009EBDE7 = {
 			isa = PBXGroup;
 			children = (
@@ -78,7 +104,6 @@
 			children = (
 				E381D7CC28401DFC009EBDE7 /* VinylApp.swift */,
 				E381D7CE28401DFC009EBDE7 /* ContentView.swift */,
-				E358B31028A059E7007383D2 /* AlbumListViewModel.swift */,
 				E381D7E22842E204009EBDE7 /* Onboarding */,
 				E381D7E3285117AA009EBDE7 /* Views */,
 				E358B30B28A04FC3007383D2 /* Models */,
@@ -117,10 +142,9 @@
 		E381D7E3285117AA009EBDE7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E381D7E428511AA9009EBDE7 /* DiscoverView.swift */,
-				E358B31428A063A3007383D2 /* AlbumView.swift */,
-				E358B31228A06214007383D2 /* ArtworkView.swift */,
-				E381D7E628511ABA009EBDE7 /* CollectionView.swift */,
+				E358B31828A1AAC2007383D2 /* Album Search Result */,
+				E358B31628A1AA94007383D2 /* Discover */,
+				E358B31728A1AAAE007383D2 /* Collection */,
 			);
 			path = Views;
 			sourceTree = "<group>";
