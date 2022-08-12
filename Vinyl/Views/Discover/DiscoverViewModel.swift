@@ -1,15 +1,14 @@
 //
-//  AlbumListViewModel.swift
+//  DiscoverViewModel.swift
 //  Vinyl
 //
-//  Created by Thomas Gray on 07/08/2022.
+//  Created by Thomas Gray on 12/08/2022.
 //
-
 import Foundation
 import SwiftUI
 import Combine
 
-class AlbumListViewModel: ObservableObject {
+class DiscoverViewModel: ObservableObject {
     @Published var searchTerm: String = ""
     @Published public private(set) var albums: [AlbumViewModel] = []
     
@@ -46,16 +45,3 @@ class AlbumListViewModel: ObservableObject {
     }
 }
 
-class AlbumViewModel: Identifiable, ObservableObject {
-    
-    let id: Int
-    let albumName: String
-    let artistName: String
-    @Published var artwork: Image?
-    
-    init(album: Album) {
-        self.id = album.id
-        self.albumName = album.collectionName
-        self.artistName = album.artistName
-    }
-}

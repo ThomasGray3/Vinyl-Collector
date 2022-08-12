@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DiscoverView: View {
     
-    @ObservedObject var viewModel: AlbumListViewModel
+    @ObservedObject var viewModel: DiscoverViewModel
     
     var body: some View {
         NavigationView {

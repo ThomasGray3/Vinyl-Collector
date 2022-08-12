@@ -10,13 +10,15 @@ import MusicKit
 
 struct ContentView: View {
     
+    let vinylCoreData: CoreDataManager
+    
     var body: some View {
         TabView {
             DiscoverView(viewModel: AlbumListViewModel())
                 .tabItem {
                     Label("Discover", systemImage: "music.note.house")
                 }
-            CollectionView()
+            CollectionView(vinylCoreData: CoreDataManager())
                 .tabItem {
                     Label("Collection", systemImage: "record.circle")
                 }

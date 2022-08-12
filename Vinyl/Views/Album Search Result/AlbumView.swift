@@ -20,6 +20,5 @@ struct AlbumView: View {
                     .font(.footnote)
             }
         }
-        .padding()
     }
 }

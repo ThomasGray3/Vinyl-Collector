@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct CollectionView: View {
+    
+    let vinylCoreData: CoreDataManager
+    @ObservedObject var viewModel: CollectionViewModel
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct CollectionView_Previews: PreviewProvider {
-    static var previews: some View {
-        CollectionView()
+        List(self.viewModel.savedAlbums) { album in
+            AlbumView(album: album)
+        }
     }
 }
